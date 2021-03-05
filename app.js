@@ -31,8 +31,12 @@ app.get("/compose", (rec, res) => {
   res.render("compose");
 })
 
-app.post("/compose", (rec, res) => {
-  console.log(rec.body.newPost)
+app.post("/compose/title", (rec, res) => {
+  console.log(rec.body.postTitle)
+})
+
+app.post("/compose/body", (rec, res) => {
+  console.log(rec.body.postBody)
 })
 
 
