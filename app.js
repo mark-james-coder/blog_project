@@ -31,6 +31,10 @@ app.get("/compose", (rec, res) => {
   res.render("compose");
 })
 
+app.post("/compose", (rec, res) => {
+  console.log(rec.body.newPost)
+})
+
 
 
 app.listen(3000, function() {
